@@ -5,7 +5,8 @@ Fisiere pentru program compresie & decompresie Huffman;
 Dupa compilare, programul primeste 3 argumente sub forma arg1 arg2 arg3, unde:  
   - arg1 = path-ul executabilului  
   - arg2 = enc / dec, unde:  
-        enc = encoding (compresie), dec = decoding (decompresie)    
+        enc = encoding (compresie),  
+        dec = decoding (decompresie)      
   - arg3 = numele fisierului de comprimat / decomprimat  
 
 # Compresie
@@ -20,10 +21,10 @@ cu numele numeFisierInitial + ".compressed".
  - In fisierul out sunt retinute:  
               -- numarul de caractere retinute in arborele Huffman  
               -- preordinea arborelui Huffman;  
-                    preordinea este retinuta in forma (exemplu): 0001a1b01c, unde  
-                    0 = nod neterminal  
-                    1 = semnaleaza ca urmatorii 8 biti vor retine codul ASCII al unui nod terminal  
-                    a, b, c = 8 biti cod ASCII, noduri terminale in arbore  
+                      preordinea este retinuta in forma (exemplu): 0001a1b01c, unde:     
+                          0 = nod neterminal  
+                          1 = semnaleaza ca urmatorii 8 biti vor retine codul ASCII al unui nod terminal  
+                          a, b, c = 8 biti cod ASCII, noduri terminale in arbore  
                     
  Pentru ca rezolutia fisierelor C este de 1 byte, cand am terminat de scris bitii textului encoded in fisierul out, restul bitilor pana la umplerea ultimului  
  byte vor fi 0, deci se foloseste un pseudo-EOF, caracterul '&', pentru a sti cand se termina textul encoded si incep bitii 0 de flushed care nu trebuie luati  
