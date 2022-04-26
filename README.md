@@ -39,3 +39,9 @@ In cazul apelarii functiei de decompresie, programul va crea un fisier nou, ce r
 
 # Afisare  
 In afara de crearea fisierelor, se printeaza si informatii cum ar fi codurile Huffman create corespunzatoare caracterelor, preordinea & inordinea arborelui creat (in cazul compresiei), respectiv recreat (in cazul decompresiei), textul encoded / decoded; se mai afiseaza si numarul de biti necesar pentru fisier atat in codare ASCII, cat si in Huffman, in cazul compresiei.  
+
+# Exemplu
+Fisierul "example.txt" poate fi folosit pentru compresie, iar apoi fisierul cu extensia ".compressed" ce rezulta din el: pentru decompresie.  
+  
+enc example.txt => example.txt.compressed  
+dec example.txt.compressed => example.txt.compressed.decompressed  
