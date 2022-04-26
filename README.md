@@ -42,4 +42,5 @@ cu numele numeFisierInitial + ".decompressed".
 
 # Afisare
 In afara de crearea fisierelor, se printeaza si informatii cum ar fi codurile Huffman create corespunzatoare caracterelor, preordinea & inordinea 
-arborelui creat (in cazul compresiei), respectiv recreat (in cazul decompresiei), si textul encoded / decoded.
+arborelui creat (in cazul compresiei), respectiv recreat (in cazul decompresiei), textul encoded / decoded; se mai afiseaza si numarul de biti necesar
+pentru fisier atat in codare ASCII, cat si in Huffman, in cazul compresiei.
