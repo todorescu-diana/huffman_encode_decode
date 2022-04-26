@@ -14,7 +14,7 @@ cu numele numeFisierInitial + ".compressed".
 
  - Se citeste textul fisierului dat
  - Se formeaza vector de frecventa din aparitiile caracterelor in text
- - Cu ajutorul vectorului de frevcventa se creeaza un minHeap
+ - Cu ajutorul vectorului de frecventa se creeaza un minHeap
  - Din minHeap se creeaza arborele Huffman
  - Prin parcurgerea arborelui Huffman se formeaza codurile caracterelor
  - In fisierul out sunt retinute: 
