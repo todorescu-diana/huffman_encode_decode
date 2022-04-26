@@ -26,7 +26,7 @@ cu numele numeFisierInitial + ".compressed".
                     a, b, c = 8 biti cod ASCII, noduri terminale in arbore
                     
  Pentru ca rezolutia fisierelor C este de 1 byte, cand am terminat de scris bitii textului encoded in fisierul out, restul bitilor pana la umplerea ultimului
- byte vor fi 0, deci se foloseste un pseudo-EOF, caracterul &, pentru a sti cand se termina textul encoded si incep bitii 0 de flushed care nu trebuie luati
+ byte vor fi 0, deci se foloseste un pseudo-EOF, caracterul '&', pentru a sti cand se termina textul encoded si incep bitii 0 de flushed care nu trebuie luati
  in considerare.
 
 # Decompresie
@@ -36,7 +36,9 @@ cu numele numeFisierInitial + ".decompressed".
 - Se citeste 1 byte reprezentand numarul de caractere ce il va contine arborele recreat
 - Se citeste si se salveaza preordinea arborelui Huffman original
 - Se reconstruieste arborele pornind de la preordine
+- Se formeaza codurile caracterelor parcurgand arborele reconstruit
 - Se citeste textul encoded si se decodifica; cand se gaseste un cod al unui caracter, se scrie in fisier out
+- Citirea se opreste la intalnirea codului pseudo-EOF -ului, '&'.
 
 # Afisare
 In afara de crearea fisierelor, se printeaza si informatii cum ar fi codurile Huffman create corespunzatoare caracterelor, preordinea & inordinea 
