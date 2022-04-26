@@ -32,7 +32,7 @@ In cazul apelarii functiei de decompresie, programul va crea un fisier nou, ce r
 
 - Se citeste 1 byte reprezentand numarul de caractere ce il va contine arborele recreat  
 - Se citeste si se salveaza preordinea arborelui Huffman original  
-- Se reconstruieste arborele pornind de la preordine  
+- Se reconstruieste arborele pornind de la preordine; din preordinea de forma 0001a1b01c se formeaza o noua preordine de forma ---ab-c, din care nodurile '-' sunt noduri neterminale, iar nodurile 'a', 'b', 'c', noduri terminale
 - Se formeaza codurile caracterelor parcurgand arborele reconstruit  
 - Se citeste textul encoded si se decodifica; cand se gaseste un cod al unui caracter, se scrie in fisier out  
 - Citirea se opreste la intalnirea codului pseudo-EOF -ului, '&'.  
