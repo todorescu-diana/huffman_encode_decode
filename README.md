@@ -4,7 +4,8 @@ Fisiere pentru program compresie & decompresie Huffman;
 # Argumente rulare executabil
 Dupa compilare, programul primeste 3 argumente sub forma arg1 arg2 arg3, unde:
   - arg1 = path-ul executabilului
-  - arg2 = enc / dec:  enc = encoding (compresie), dec = decoding (decompresie)
+  - arg2 = enc / dec, unde:
+        enc = encoding (compresie), dec = decoding (decompresie)
   - arg3 = numele fisierului de comprimat / decomprimat
 
 # Compresie
