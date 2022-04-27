@@ -25,7 +25,7 @@ In cazul apelarii functiei de compresie, programul va crea un fisier nou, ce rez
                           1 = semnaleaza ca urmatorii 8 biti vor retine codul ASCII al unui nod terminal  
                           a, b, c = 8 biti cod ASCII, noduri terminale in arbore  
                     
- Pentru ca rezolutia fisierelor C este de 1 byte, cand am terminat de scris bitii textului encoded in fisierul out, restul bitilor pana la umplerea ultimului byte vor fi 0, deci se foloseste un pseudo-EOF, caracterul '&', pentru a sti cand se termina textul encoded si incep bitii 0 de flushed care nu trebuie luati in considerare.   
+ Pentru ca rezolutia fisierelor C este de 1 byte, cand am terminat de scris bitii textului encoded in fisierul out, restul bitilor pana la umplerea ultimului byte vor fi 0, deci se foloseste un pseudo-EOF, caracterul '&', pentru a sti cand se termina textul encoded si incep bitii 0 care nu trebuie luati in considerare.   
 
 # Decompresie  
 In cazul apelarii functiei de decompresie, programul va crea un fisier nou, ce rezulta din fisierul initial dupa ce este decomprimat, cu numele numeFisierInitial + ".decompressed".  
@@ -38,7 +38,7 @@ In cazul apelarii functiei de decompresie, programul va crea un fisier nou, ce r
 - Citirea se opreste la intalnirea codului pseudo-EOF -ului, '&'.  
 
 # Afisare  
-In afara de crearea fisierelor, se printeaza si informatii cum ar fi codurile Huffman create corespunzatoare caracterelor, preordinea & inordinea arborelui creat (in cazul compresiei), respectiv recreat (in cazul decompresiei), textul encoded / decoded; se mai afiseaza si numarul de biti necesar pentru fisier atat in codare ASCII, cat si in Huffman, in cazul compresiei.  
+In afara de crearea fisierelor, se printeaza si informatii cum ar fi codurile Huffman create corespunzatoare caracterelor, preordinea & inordinea arborelui creat (in cazul compresiei), respectiv recreat (in cazul decompresiei), textul encoded / decoded; se mai afiseaza si numarul de biti necesar pentru retinerea textului atat in codare ASCII, cat si in Huffman, in cazul compresiei.  
 
 # Exemplu
 Fisierul "example.txt" poate fi folosit pentru compresie, iar apoi fisierul cu extensia ".compressed" ce rezulta din el: pentru decompresie.  
