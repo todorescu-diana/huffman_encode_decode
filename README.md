@@ -24,6 +24,7 @@ In cazul apelarii functiei de compresie, programul va crea un fisier nou, ce rez
                           0 = nod neterminal  
                           1 = semnaleaza ca urmatorii 8 biti vor retine codul ASCII al unui nod terminal  
                           a, b, c = 8 biti cod ASCII, noduri terminale in arbore  
+              -- textul encoded
                     
  Pentru ca rezolutia fisierelor C este de 1 byte, cand am terminat de scris bitii textului encoded in fisierul out, restul bitilor pana la umplerea ultimului byte vor fi 0, deci se foloseste un pseudo-EOF, caracterul '&', pentru a sti cand se termina textul encoded si incep bitii 0 care nu trebuie luati in considerare.   
 
